@@ -48,7 +48,7 @@ def solution(video_len, pos, op_start, op_end, commands):
         else:
             pos_times = next(pos_times[0], pos_times[1])
 
-    # 최종적으로 나온 값을 "00:00" 형태로 변환
+    # 최종값을 "00:00" 형태로 변환
     def to_str_time_format(curr_pos_times):
         curr_min = "0" + str(curr_pos_times[0]) if curr_pos_times[0] < 10 else str(curr_pos_times[0])
         curr_sec = "0" + str(curr_pos_times[1]) if curr_pos_times[1] < 10 else str(curr_pos_times[1])
